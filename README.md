@@ -7,4 +7,4 @@ var items = 12
 ```
 circle would look like below - 
 
-<p align="center"><img src="https://github.com/visheshmishra/circle_division/tree/master/images/circle.png"></p>
+<p align="center"><img src="https://github.com/visheshmishra/circle_division/blob/master/images/circle.png"></p>
