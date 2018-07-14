@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Circle division in equal parts</title>
+		<meta charset="utf-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css"> 
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class = "d-flex align-items-center justify-content-center">
+				<div class="circle-div d-flex align-items-center justify-content-center" id="outerCirlceId">
+					<div class="center-div" id="centerDivId">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+
+			
+			var cordinateArr = [];
+			var x0 ;
+			var y0;
+			var centerObj = {};
+			function getCenter(){
+			x0 = document.getElementById("centerDivId").offsetLeft;
+			y0 = document.getElementById("centerDivId").offsetTop;
+			centerObj.left = x0;
+			centerObj.top = y0;
+			centerObj.width = 1;
+			centerObj.height = 1;
+			console.log("center x,y" + x0,y0);
+			var items = 12;
+			var r1 = 200;
+				for(var i = 0; i < items; i++){ 
+					var cordObj = {}; 	
+					var cordImgObj = {};
+					var x = x0 + r1 * Math.cos(2 * Math.PI * i / items); 
+					var y = y0 + r1 * Math.sin(2 * Math.PI * i / items);
+					
+					cordObj.left = x;
+					cordObj.top = y;
+					cordObj.width = 1;
+					cordObj.height = 1;
+					console.log("x = "+x, "y = "+y);
+					cordinateArr.push(cordObj);
+				}
+				drawLine();
+			}
+			 
+			function drawLine(){
+			var thickness = 2;
+			var color = "black";
+				while(cordinateArr.length!=0){
+					var off1 = centerObj;
+					var off2 = cordinateArr[0];
+					// bottom right
+					var x1 = off1.left + off1.width;
+					var y1 = off1.top + off1.height;
+					// top right
+					var x2 = off2.left + off2.width;
+					var y2 = off2.top;
+					// distance
+					var length = Math.sqrt(((x2-x1) * (x2-x1)) + ((y2-y1) * (y2-y1)));
+					// center
+					var cx = ((x1 + x2) / 2) - (length / 2);
+					var cy = ((y1 + y2) / 2) - (thickness / 2);
+					// angle
+					var angle = Math.atan2((y1-y2),(x1-x2))*(180/Math.PI);
+					// make hr
+					var htmlLine = "<div style='padding:0px; margin:0px; height:" + thickness + "px; background-color:" + color + "; line-height:1px; position:absolute; left:" + cx + "px; top:" + cy + "px; width:" + length + "px; -moz-transform:rotate(" + angle + "deg); -webkit-transform:rotate(" + angle + "deg); -o-transform:rotate(" + angle + "deg); -ms-transform:rotate(" + angle + "deg); transform:rotate(" + angle + "deg);' />";
+					//
+					//document.body.innerHTML += htmlLine;
+					document.getElementById("outerCirlceId").innerHTML += htmlLine;
+					cordinateArr.splice(0,1);
+				}
+			}
+			getCenter();
+			
+			
+		</script>
+	</body>
+</html>
