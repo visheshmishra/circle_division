@@ -35,12 +35,11 @@
 			centerObj.height = 1;
 			console.log("center x,y" + x0,y0);
 			var items = 12;
-			var r1 = 200;
+			var r = 200;
 				for(var i = 0; i < items; i++){ 
-					var cordObj = {}; 	
-					var cordImgObj = {};
-					var x = x0 + r1 * Math.cos(2 * Math.PI * i / items); 
-					var y = y0 + r1 * Math.sin(2 * Math.PI * i / items);
+					var cordObj = {}; 
+					var x = x0 + r * Math.cos(2 * Math.PI * i / items); 
+					var y = y0 + r * Math.sin(2 * Math.PI * i / items);
 					
 					cordObj.left = x;
 					cordObj.top = y;
