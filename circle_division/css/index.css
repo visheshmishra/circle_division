@@ -7,9 +7,5 @@
     left: 30%;
     top:100px;
     overflow: hidden;
-	background:red;
-	 -webkit-transition: all 5s linear;
-    -moz-transition: all 5s linear;
-    -o-transition: all 5s linear;
-    transition: all 5s linear;
+	background:grey;
 }
