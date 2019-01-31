@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Title Invoice</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" type="text/css" href="invoice.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="col-md-10 shadow p-3 mb-5 bg-white rounded mainContent">
+          <div class="panelHeader1" style="background-color: rgb(51, 51, 51);"></div>
+    <form>
+      <div class="invoiceHeader">
+          <div class="row d-flex justify-content-between">
+              <h2>
+                <input type="text" class="form-control"  placeholder="INVOICE" id="inputInvoiceTitle">
+              </h2> 
+           </div>
+           <div class="">
+           </div>
+      </div>
+        
+        <div class="row">
+          <div class="col">
+            <div class="form-group row">
+                <label for="inputNameF" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-5">
+                  <input type="email" class="form-control" id="inputNameF">
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="form-group row">
+                <label for="inputNameT" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-5">
+                  <input type="email" class="form-control" id="inputNameT">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmailF" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmailF">
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputAddF" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputAddT">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputPhoneF" class="col-sm-2 col-form-label">Address</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputPhoneT">
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputBusinessNo" class="col-sm-2 col-form-label">Address</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputBusinessNo">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Business Number</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Invoice Number</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
+                    <div class="col-sm-5">
+                     <input data-date-format="dd/mm/yyyy" id="datepicker">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Terms</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Due</label>
+                  <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="descriptionTable">
+                <table class="table">
+                    <thead>
+                      <tr>
+                          <th>&nbsp;</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                        <th>Tax</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>X</td>
+                        <td><input type="text" class="form-control" id="itemDesc1" placeHolder="Item Description"></td>
+                        <td><input type="text" class="form-control" id="itemPrice1" placeHolder="0:00"></td>
+                        <td><input type="text" class="form-control" id="itemAty1" placeHolder="1"></td>
+                        <td><input type="text" class="form-control" id="itemAmount1" placeHolder="1"></td>
+                        <td><input type="checkbox" class="form-control" id="taxCheck1"></td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td><input type="text" class="form-control" id="itemDesc1" placeHolder="Additional Details"></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+      </form>
+      </div>
+      </div>
+</body>
+<script type="text/JavaScript">
+     $('#datepicker').datepicker({
+        weekStart: 1,
+        daysOfWeekHighlighted: "6,0",
+        autoclose: true,
+        todayHighlight: true,
+    });
+    $('#datepicker').datepicker("setDate", new Date());
+</script>
+</html>
